@@ -1,0 +1,22 @@
+{
+    "name": "portfolio",
+    "description": "Portfolio and Blog",
+    "authors": [
+        {
+            "name": "Anthony Woodward",
+            "email": "two.woods@googlemail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "pear",
+            "url": "http://pear.cakephp.org"
+        }
+    ],
+    "require": {
+        "cakephp/cakephp": ">=2.4.9"
+    },
+    "config": {
+        "vendor-dir": "Vendor/"
+    }
+}
