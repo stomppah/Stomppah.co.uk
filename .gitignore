@@ -67,10 +67,10 @@ atlassian-ide-plugin.xml
 com_crashlytics_export_strings.xml
 
 #CakePHP
-tmp/*
-config/database.php
-app/tmp/*
-app/config/database.php
+code/tmp/*
+code/Config/database.php
+code/app/tmp/*
+code/app/Config/database.php
 !empty
  
 #Code Igniter
@@ -84,3 +84,4 @@ protected/config/main-local.php
  
 /.htaccess
 *.phar
+.htaccess
