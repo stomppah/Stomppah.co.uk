@@ -1,0 +1,43 @@
+/* Available Variables */
+$small-screen: em-calc(768)
+$medium-screen: em-calc(1280)
+$large-screen: em-calc(1440)
+
+$screen: "only screen"
+$small: "only screen and (min-width:"#{$small-screen}")"
+$medium: "only screen and (min-width:"#{$medium-screen}")"
+$large: "only screen and (min-width:"#{$large-screen}")"
+$landscape: "only screen and (orientation: landscape)"
+$portrait: "only screen and (orientation: portrait)"
+
+$font-stack: "Roboto", Helvetica, Arial, sans-serif
+$color: #222
+$border: #e5e5e5
+
+html
+  font-size: 1em
+  font-family: $font-stack
+  font-weight: 300
+  line-height: 1.5
+  color: $color
+
+/* We use this media query to add styles to any device that supports media queries */
+@media #{$screen}
+  .activity
+    border-bottom: 1px solid $border
+
+  .last
+    margin-bottom: 0
+    border-bottom: 0
+    padding-bottom: 0
+
+@media only screen and (min-width: 64.063em)
+  .activity
+    float: left
+    border-right: 1px solid $border
+    padding: 0 24px
+
+  .last
+    margin-right: 0
+    border-right: 0
+    padding-right: 0

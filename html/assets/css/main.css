@@ -1,0 +1,27 @@
+/* Available Variables */
+html {
+  font-size: 1em;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #222222; }
+
+/* We use this media query to add styles to any device that supports media queries */
+@media only screen {
+  .activity {
+    border-bottom: 1px solid #e5e5e5; }
+
+  .last {
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0; } }
+@media only screen and (min-width: 64.063em) {
+  .activity {
+    float: left;
+    border-right: 1px solid #e5e5e5;
+    padding: 0 24px; }
+
+  .last {
+    margin-right: 0;
+    border-right: 0;
+    padding-right: 0; } }
