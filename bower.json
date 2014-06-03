@@ -1,0 +1,11 @@
+{
+  "name": "portfolio",
+  "version": "0.0.1",
+  "main": "html/assets/css/main.css",
+  "dependencies": {
+    "foundation": "~5.2.3",
+    "trianglify": "~0.1.2",
+    "d3": "~3.4.8"
+  },
+  "private": true
+}
