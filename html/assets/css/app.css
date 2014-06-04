@@ -8569,7 +8569,7 @@ html {
     .activity {
         float: left;
         border-right: 1px solid #e5e5e5;
-        padding: px 24px;
+        padding: 0px 24px;
     }
 
     /* line 40, ../sass/_main.sass */
