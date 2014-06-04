@@ -9148,7 +9148,7 @@ html {
     .activity {
         float: left;
         border-right: 1px solid #e5e5e5;
-        padding: 0 24px;
+        padding: 24px 24px;
     }
 
     /* line 40, ../sass/_main.sass */
