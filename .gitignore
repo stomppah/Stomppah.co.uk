@@ -85,3 +85,4 @@ protected/config/main-local.php
 /.htaccess
 *.phar
 .htaccess
+/.sass-cache

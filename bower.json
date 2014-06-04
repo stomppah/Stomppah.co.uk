@@ -1,9 +1,9 @@
 {
-  "name": "portfolio",
-  "version": "0.0.1",
-  "main": "html/assets/css/main.css",
+  "name": "stomppah.co.uk",
+  "version": "2.0.0",
+  "main": "html/assets/css/app.css",
   "dependencies": {
-    "foundation": "~5.2.3",
+    "foundation": "zurb/bower-foundation#~5.2.3",
     "trianglify": "~0.1.2",
     "d3": "~3.4.8"
   },
