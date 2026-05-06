@@ -1,11 +1,11 @@
 {
   "name": "stomppah.co.uk",
-  "version": "2.0.0",
-  "main": "html/assets/css/app.css",
+  "version": "3.0.0",
+  "main": "html/index.html",
   "dependencies": {
-    "foundation": "zurb/bower-foundation#~5.2.3",
-    "trianglify": "~0.1.2",
-    "d3": "~3.4.8"
+    "foundation-sites": "^6.9.0",
+    "d3": "^7.9.0",
+    "trianglify": "^4.1.1"
   },
   "private": true
 }
