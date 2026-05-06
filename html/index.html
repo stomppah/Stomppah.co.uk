@@ -1,198 +1,113 @@
 <!doctype html>
-<!--[if IE 9]>
-<html class="lt-ie10" lang="en"> <![endif]-->
-<html class="no-js" lang="en">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="">
-    <meta name="author" content="Anthony Woodward">
-    <link rel="shortcut icon" href="assets/img/favicon.ico">
-
-    <title>Anthony Woodward (stomppah) portfolio</title>
-
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,700">
-
-    <link rel="stylesheet" href="assets/css/app.css">
-
-    <script src="assets/components/modernizr/modernizr.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Placeholder portfolio site for future content." />
+  <meta name="author" content="Anthony Woodward" />
+  <title>Anthony Woodward — Portfolio Placeholder</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --surface: #111827;
+      --muted: #94a3b8;
+      --text: #e2e8f0;
+      --accent: #22d3ee;
+      --accent-2: #a78bfa;
+      --border: #1f2937;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(circle at top right, #1e1b4b 0%, var(--bg) 45%, #020617 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap { width: min(1080px, 92vw); margin: 0 auto; }
+    header { padding: 2rem 0 1rem; }
+    nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    nav ul { display: flex; list-style: none; gap: 1rem; margin: 0; padding: 0; }
+    nav a { color: var(--muted); text-decoration: none; font-weight: 600; }
+    nav a:hover { color: var(--accent); }
+    .hero { padding: 4.5rem 0 3rem; }
+    .hero h1 { margin: 0 0 1rem; font-size: clamp(2rem, 4vw, 3.3rem); }
+    .hero p { margin: 0 0 1.75rem; color: var(--muted); max-width: 60ch; }
+    .cta { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .btn { border: 1px solid var(--border); background: var(--surface); color: var(--text); padding: 0.75rem 1rem; border-radius: 0.6rem; text-decoration: none; font-weight: 600; }
+    .btn.primary { border-color: transparent; background: linear-gradient(120deg, var(--accent), var(--accent-2)); color: #020617; }
+    section { padding: 1.75rem 0; }
+    h2 { margin: 0 0 0.9rem; font-size: 1.5rem; }
+    .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+    .card {
+      padding: 1rem;
+      background: rgba(17, 24, 39, 0.7);
+      border: 1px solid var(--border);
+      border-radius: 0.8rem;
+      backdrop-filter: blur(6px);
+    }
+    .card h3 { margin-top: 0; }
+    .card p { margin-bottom: 0; color: var(--muted); }
+    footer { margin-top: 2rem; padding: 2rem 0; border-top: 1px solid var(--border); color: var(--muted); }
+  </style>
 </head>
 <body>
+  <header class="wrap">
+    <nav>
+      <strong>Anthony Woodward</strong>
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#writing">Writing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<div class="row">
-    <div class="large-12 columns">
+  <main class="wrap">
+    <section class="hero">
+      <h1>Portfolio Rebuild in Progress</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt, ligula non fermentum eleifend, mauris nunc tincidunt turpis, sed convallis augue justo eu lorem.</p>
+      <div class="cta">
+        <a class="btn primary" href="#work">View Placeholder Projects</a>
+        <a class="btn" href="#contact">Get In Touch</a>
+      </div>
+    </section>
 
+    <section id="work">
+      <h2>Selected Placeholder Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Project Alpha</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed arcu non massa luctus suscipit in ac mauris.</p>
+        </article>
+        <article class="card">
+          <h3>Project Beta</h3>
+          <p>Praesent consequat sem vel facilisis cursus. Integer dignissim vestibulum felis, quis hendrerit ligula posuere id.</p>
+        </article>
+        <article class="card">
+          <h3>Project Gamma</h3>
+          <p>Quisque id lorem id sem sagittis tristique. Duis faucibus est sed risus fermentum, vel tempus erat bibendum.</p>
+        </article>
+      </div>
+    </section>
 
-        <nav class="top-bar" data-topbar>
-            <ul class="title-area">
+    <section id="writing">
+      <h2>Writing & Notes</h2>
+      <div class="card">
+        <p>Curabitur gravida, magna vitae tincidunt luctus, erat lorem dapibus tortor, id gravida nisi elit vel odio. This block is intentionally placeholder copy and will be replaced with real articles later.</p>
+      </div>
+    </section>
 
-                <li class="name">
-                    <h1>
-                          <a href="#">
-                            Anthony Woodward
-                        </a>
-                    </h1>
-                </li>
-                <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
-            </ul>
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Reach out via email@example.com or through social links once final content is added.</p>
+      </div>
+    </section>
+  </main>
 
-            <section class="top-bar-section">
-                <ul class="left">
-
-                </ul>
-
-                <ul class="right">
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Github</a></li>
-                    <li><a href="#">Twitter</a></li>
-                </ul>
-            </section>
-        </nav>
-
-
-    </div>
-</div>
-
-
-<div class="row">
-    <div class="large-12 columns">
-
-        <div class="hide-for-small">
-            <div id="featured" style="height: 336px; overflow: hidden;">
-                <img src="assets/img/splash.jpg" alt="slide image">
-
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="small-12 show-for-small"><br>
-                <img src="assets/img/splash.jpg"/>
-            </div>
-        </div>
-
-    </div>
-</div>
-<br>
-
-<div class="row">
-    <div class="large-12 columns">
-        <div class="row">
-
-            <div class="first activity large-4 small-12 columns">
-                <h1>Work</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, quem nulla epicuri his ei. Falli legendos constituam eos cu, veri
-                    inciderint sed an. Vidit labore eu qui. Vel ubique civibus ut, utinam consetetur percipitur vix ne.
-                    Eum et liber debet. Vis ad viderer iuvaret, tantas lucilius disputationi id vel.
-                </p>
-            </div>
-
-            <div class="activity large-4 small-12 columns">
-                <h1>Play</h1>
-                <p>
-                    Habeo feugait rationibus vim eu. Quis doctus salutatus sed ex. No nam impetus maiorum perfecto,
-                    at nusquam voluptatum per, at consul facete aliquid pri.
-                    Pri ubique aliquip ea, in has malorum intellegebat, mei fabulas contentiones ad.
-                </p>
-            </div>
-
-            <div class="last activity large-4 small-12 columns">
-                <h1>Social</h1>
-                <p>
-                    Maluisset salutatus moderatius in vis, ei cetero persius sapientem vis, no commodo pertinax eum.
-                    Ex vis dolorum indoctum, eu vim wisi honestatis. Noster graecis explicari ex pri.
-                    Ipsum ridens dissentiet vel ea. Te est nulla simul.
-                </p>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="large-12 columns">
-        <div class="row">
-
-
-            <div class="large-8 columns">
-                <div class="panel radius">
-
-                    <div class="row">
-                        <div class="large-6 small-6 columns">
-
-                            <h4>Header</h4>
-                            <hr/>
-                            <h5 class="subheader">Risus ligula, aliquam nec fermentum vitae, sollicitudin eget urna.
-                                Donec dignissim nibh fermentum odio ornare sagittis.
-                            </h5>
-
-                            <div class="show-for-small" align="center">
-                                <a href="#" class="small radius button">Call To Action!</a><br>
-
-                                <a href="#" class="small radius button">Call To Action!</a>
-                            </div>
-
-                        </div>
-                        <div class="large-6 small-6 columns">
-
-                            <p>Suspendisse ultrices ornare tempor. Aenean eget ultricies libero. Phasellus non ipsum
-                                eros. Vivamus at dignissim massa. Aenean dolor libero, blandit quis interdum et,
-                                malesuada nec ligula. Nullam erat erat, eleifend sed pulvinar ac. Suspendisse ultrices
-                                ornare tempor. Aenean eget ultricies libero.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="large-4 columns hide-for-small">
-
-                <h4>Get In Touch!</h4>
-                <hr/>
-
-                <a class="large button expand" href="#">
-                    Call To Action!
-                </a>
-
-                <a class="large button expand" href="#">
-                    Call To Action!
-                </a>
-
-
-            </div>
-
-
-        </div>
-    </div>
-</div>
-
-<footer class="row">
-    <div class="large-12 columns">
-        <hr>
-        <div class="row">
-            <div class="large-6 columns">
-                <p>© Copyright no one at all. Go to town.</p>
-            </div>
-            <div class="large-6 columns">
-                <ul class="inline-list right">
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
-                    <li><a href="#">Link 4</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<script src="assets/components/jquery/dist/jquery.js"></script>
-<script src="assets/components/foundation/js/foundation.js"></script>
-<script src="assets/components/d3/d3.js"></script>
-<script src="assets/components/trianglify/trianglify.js"></script>
-<script src="assets/js/app.js"></script>
-
+  <footer class="wrap">
+    <small>© 2026 Anthony Woodward. Placeholder layout rebuilt from scratch.</small>
+  </footer>
 </body>
 </html>
